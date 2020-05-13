@@ -63,6 +63,10 @@ color: black;
     text-align: center;
     padding-top: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
 }
 .what-we-do headings{
     padding-bottom: 38px;
@@ -96,7 +100,7 @@ color: black;
     padding-bottom: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-input[type=text],input[type=email],input[type="Your message here.."],input[type=placeholder]{
+input[type=text],input[type=email],input[type="Your message here..."],input[type=placeholder]{
     background: transparent;
     color: white;
     font-size: 20px;

@@ -1,0 +1,126 @@
+html{
+    scroll-behavior: smooth;
+}
+.title{
+    padding: 6px
+}
+.header{
+    background-image: url("../images/background/h_image.jpg");
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    background-position:center center ;
+    background-size: cover;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: antiquewhite;
+    /* padding-bottom: 5%; */
+}
+.header h1{
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+}
+.header p{
+    padding: 2px;
+    text-align: center;
+}
+#logo{
+background-image: url("./images/logo/logo.png");    
+margin-top: 12px;
+margin-bottom: 24px;
+width: 70px;
+height: 70px;
+color: black;
+}
+#mouse-click{
+    padding-top: 22px;
+    margin-top: 10%;
+    padding-bottom: 30px;
+}
+.about{
+    text-align: center;
+    font-size: 18px;
+}
+.about h2{
+    font-weight: 500;
+}
+.services{
+    text-align: center;
+    background-image: url("../images/background/S_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: antiquewhite;
+}
+#serviceoverlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.what-we-do{
+    text-align: center;
+    padding-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.what-we-do headings{
+    padding-bottom: 38px;
+    text-align: center;
+}
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 18%;
+    margin-right: 16%;
+}
+.col-md-3 img{
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 10px;
+}
+.contacts{
+    background-image: url("../images/background/c_image.jpg");
+    text-align: center;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*text-align: centre;*/
+}
+.contacts h2{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input[type=text],input[type=email],input[type="Your message here.."]{
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    margin-left: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20PX;
+}
+footer{
+    text-align: center;
+    padding-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer p{
+    margin-top: 10px;
+}
+#product, #development, #design{
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+#product .title, #development .title, #design .title{
+    font-size: 20px;
+    font-weight: 500;
+}

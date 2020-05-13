@@ -1,142 +1,157 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Delani Studio</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
-        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <link href="./css/index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <!--delani studio header-->
-        <section class="container-fluid delani-studio section">
+        <div class="container-fluid">
             <div class="header">
-                <img src="/images/h_img.jpg" alt="welcome" class="welcome"/>
-                <span class="text 1">welcome to delani studio</span>
-                <span class="text 2">amazing people are making amazing designs in fun environment</span>
+                <img src="./images/logo/logo.png" alt="logo" id="logo"/>
+                <h1>welcome</h1> 
+                <h1>To delani studio</h1>
+                <p>amazing people are making amazing designs in fun environment</p>
+                <div class="mouseclick"></div>
+                <a href="#about us"><img src=./images/logo/mouse_click.png alt="mouse_click" id="mouse_click"></a>
             </div>
-        </section>
-            <!--about us section-->
-        <section class="container about section">
-            <div class="row">
-                <h1>About Us</h1>
+        </div>   
+           <div class="container about" id="about us">
+                <h2>ABOUT US</h2>
                 <p>when you work with us,you are part of a team of commited collaborations.All aspects of our software development process are intergrated,interactive and agile.
-                Our approach unifies design,development and product management to create exceptional products.
-                We start each project by understanding your business goals, the user's needs and the product requirments.
+                <br>Our approach unifies design,development and product management to create exceptional products.
+                <br>We start each project by understanding your business goals, the user's needs and the product requirments.
                 Then we help trasalte them into effective and elegant solutions.</p>
             </div>
-        </section>
-          <!--services section-->
-          <section class="container services section">
-            <div class="row">
-                <img src="/images/s_img.jpg" alt="services" class="services"/>
-                <h2>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.
-                    The outcome of this scoping session is proposal or high-level statement of work
-                    based on your requirements, We can provide acomplete affering or just the pieces you need.</h2>
+          
+            <div class="services">
+                <div id=serviceoverlay>
+                 <h2>SERVICES</h2>
+                 <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.
+                    <br>The outcome of this scoping session is proposal or high-level statement of work
+                    based on your requirements, We can provide acomplete affering or just the pieces you need.</p>
+                </div>    
             </div>
-        </section>
-        <!--what we do section-->
-         <section class="container what we do section">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="/images/services-icon/design_icon.jpg" alt="what-we-do" class="design"/>
-                    <div class="toogleDesignlogo">
-                        <h1>DESIGN</h1>
-                        <P>Our design offers a full range of services including brand strategy, interaction and visual design and user experience testing throughout your project, Our designers create and implement visual designs and our workflow, solicit user feedback and work with youto make sure what gets built is what is needed</P>
+        
+            <div class="container what-we-do">
+              <h2 class="headings">WHAT WE DO</h2>
+              <div class="row">
+                <div class="col-sm-3">
+                    <div id="toogleDesignlogo">
+                        <h2 class="title">DESIGN</h2>
+                        <P class="logo" 
+                        id="part1">
+                        Our design offers a full range of services including brand strategy, interaction and visual design and user experience testing throughout your project, 
+                        <br>Our designers create and implement visual designs and our workflow, solicit user feedback and work with youto make sure what gets built is what is needed</P>
+                    </div>
+                    <div id="designlogo">
+                        <button><img src="./images/services-icons/design_icon.jpg"/></button>
+                        <p>DESIGN</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="/images/services-icon/dev_icon.jpg" alt="what-we-do" class="development"/>
+                <div class="col-sm-3">
                     <div class="toogleDevelopmentlogo">
-                        <h1>DEVELOPMENT</h1>
-                        <P>All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write and improve code on daily basis, using proven practices such as test-driven development and pair programming</P>
+                        <h2 class="title">DEVELOPMENT</h2>
+                        <P class="logo1"
+                         id="part2">
+                         All engineers are fluent in the latest enterprise, mobile and web development technologies. 
+                        <br>They collaborate with your team to write and improve code on daily basis, using proven practices such as test-driven development and pair programming</P>
+                    </div>
+                    <div id="developmentlogo">
+                        <button><img src="./images/services-icons/dev_icon.jpg"/></button>
+                        <p>DEVELOPMENT</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="/images/services-icon/c_image.jpg" alt="what-we-do" class="PRODUCT MANAGEMENT"/>
+                <div class="col-sm-3">
                         <div class="toogleProductManagementlogo">
-                            <h1>planning and development is iterative because we are constantly coding and testing the products we build are always ready to go live.This iterative process allows for changes as business requirements evolve</h1>
+                            <h2 class="title">PRODUCT MANAGEMENT</h2>
+                            <P class="logo2"
+                            id="part3">
+                            planning and development is iterative because we are constantly coding and testing the products we build are always ready to go live.
+                            <br>This iterative process allows for changes as business requirements evolve</P>
                         </div>
-
-            </section>
-            <!--portfolio-->
-            <div class="container portfolio">
-                <div class="row">
+                        <div id="ProductManagementlogo">
+                            <button> <img src="./images/services-icons/product_icon.jpg"/></button>
+                            <p>PRODUCT MANAGEMENT</p>
+                        </div>
+                </div>     
+            </div>      
+           
+            <div class="portfolio">
+                <h2>PORTFOLIO</h2>
+                <div class="row" id="portfolio">
                     <div class="col-md-3" id="work 1">
-                        <img src="./images/portfolio/work1.jpg" alt="work1"/>
+                        <img src="./images/portfolio/work1.jpg" alt="work1" class="image"/>
+                        <div class="work1"></div>
                     </div>
                     <div class="col-md-3" id="work 2">
-                        <img src="./images/portfolio/work2.jpg" alt="work2"/>
-                     </div>
+                        <img src="./images/portfolio/work2.jpg" alt="work2" class="image"/>
+                        <div class="work2"></div>
+                    </div>
                      <div class="col-md-3" id="work 3">
-                         <img src="./images/portfolio/work3.jpg" alt="work3">
+                         <img src="./images/portfolio/work3.jpg" alt="work3" class="image">
+                         <div class="work3"></div>
                      </div>
                      <div class="col-md-3" id="work 4">
-                         <img src="./images/portfolio/work4.jpg" alt="work4">
+                         <img src="./images/portfolio/work4.jpg" alt="work4" class="image">
+                         <div class="work4"></div>
                      </div>
                 </div>
                 <div class="row" id="portfolio">
                     <div class="col-md-3" id="work5">
                         <img src="./images/portfolio/work5.jpg" alt="work5">
+                        <div class="work5"></div>
                     </div>
                     <div class="col-md-3" id="work6">
                         <img src="./images/portfolio/work6.jpg" alt="work6">
+                        <div class="work6"></div>
                     </div>
                     <div class="col-md-3" id="work7">
                         <img src="./images/portfolio/work7.jpg" alt="work7">
+                        <div class="work7"></div>
                     </div>
                     <div class="col-md-3" id="work8">
                         <img src="./images/portfolio/work8.jpg" alt="work8">
+                        <div class="work8"></div>
                     </div>
                 </div>
-                <!--contact us section-->
-                <section container="container-fluid contacts">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h1>CONTACT US</h1>
-                            <div class="container">
-                                <img src="./images/c_image.jpg" alt="contact us"/>
+               
+                <div class="container-fluid contacts">
+                        <h2>CONTACT US</h2>
                                 <form action="/action_page.php">
-                                  <label for="fname"></label>
+                                  <label for="name"></label>
                                   <input type="text" id="fname" name="firstname" placeholder="Your name..">
                               
-                                  <label for="lname"></label>
+                                  <label for="email"></label>
                                   <input type="text" id="email" name="" placeholder="Email..">
-                              
-                                  
-                                  <label for="subject">Subject</label>
-                                  <textarea id="subject" name="subject" placeholder="Your message here.." style="height:200px"></textarea>
-                              
-                                  <input type="submit" value="Submit">
+
+                                  <textarea id="subject" name="subject" placeholder="Your message here.."></textarea>
+                                  <button type="submit" class="btn-btn-primary col-md-1">submit</button>
                                 </form>
-                              </div>
-                        </div>
-                    </div>
-                </section>
-                <!--social media-->
-                <div class="footer">
-                    <div class="col-md-4">
-                        <img src="./images/social_icons/behance.png" alt="behance">
-                        <img src="./images/social_icons/dribble.png" alt="dribble">
-                        <img src="./images/social_icons/facebook.png" alt="facebook">
-                        <img src="./images/social_icons/flickr.png" alt="flickr">
-                        <img src="./images/social_icons/g_plus.png" alt="g_plus">
-                        <img src="./images/social_icons/pinterest.png" alt="pinterest">
-                        <img src="./images/social_icons/skype.png" alt="skype">
-                        <img src="./images/social_icons/stumble_upon.png" alt="stumble_upon">
-                        <img src="./images/social_icons/twitter.png" alt="twitter">
-                        <img src="./images/social_icons/you-tube.png" alt="you-tube">
-                        <p>DELANI STUDIO</p>
-                        <P>2020</P>
-                    </div>
                 </div>
             </div> 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <footer>
+                <img src="./images/social_icons/behance.png" alt="behance">
+                <img src="./images/social_icons/dribble.png" alt="dribble">
+                <img src="./images/social_icons/facebook.png" alt="facebook">
+                <img src="./images/social_icons/flickr.png" alt="flickr">
+                <img src="./images/social_icons/g_plus.png" alt="g_plus">
+                <img src="./images/social_icons/pinterest.png" alt="pinterest">
+                <img src="./images/social_icons/skype.png" alt="skype">
+                <img src="./images/social_icons/stumble_upon.png" alt="stumble_upon">
+                <img src="./images/social_icons/twitter.png" alt="twitter">
+                <p>DELANI STUDIO</p>
+                <P>2020</P>
+            </footer>    
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+         <script src="js/scripts.js"></script>
     </body>
 </html>
